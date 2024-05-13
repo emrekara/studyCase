@@ -34,6 +34,10 @@ class CurrenciesApiController extends Controller
             'url'=>'required',
             'type'=>'required',
             'status'=>'required',
+            'data_name'=>'required',
+            'data_price'=>'required',
+            'data_symbol'=>'required',
+            'data_shortCode'=>'required',
         ],$this->validateMessages());
         if ($valid->fails()){
             foreach ($valid->errors()->all() as $message){
@@ -49,6 +53,10 @@ class CurrenciesApiController extends Controller
                 $row["type"]=$request["type"];
                 $row["status"]=$request["status"];
                 $row["var_path"]=$request["var_path"];
+                $row["data_name"]=$request["data_name"];
+                $row["data_price"]=$request["data_price"];
+                $row["data_symbol"]=$request["data_symbol"];
+                $row["data_shortCode"]=$request["data_shortCode"];
                 $row->save();
                 DB::commit();
                 toastr()->success('Registration Successful');
@@ -76,6 +84,10 @@ class CurrenciesApiController extends Controller
             'url'=>'required',
             'type'=>'required',
             'status'=>'required',
+            'data_name'=>'required',
+            'data_price'=>'required',
+            'data_symbol'=>'required',
+            'data_shortCode'=>'required',
         ],$this->validateMessages());
         if ($valid->fails()){
             foreach ($valid->errors()->all() as $message){
@@ -92,6 +104,10 @@ class CurrenciesApiController extends Controller
                     $row["type"]=$request["type"];
                     $row["status"]=$request["status"];
                     $row["var_path"]=$request["var_path"];
+                    $row["data_name"]=$request["data_name"];
+                    $row["data_price"]=$request["data_price"];
+                    $row["data_symbol"]=$request["data_symbol"];
+                    $row["data_shortCode"]=$request["data_shortCode"];
                     $row->save();
                 }
                 DB::commit();
@@ -136,7 +152,11 @@ class CurrenciesApiController extends Controller
             'name.required'=>'Name field is required',
             'url.required'=>'Url field is required',
             'type.required'=>'Type field is required',
-            'status.required'=>'Name field is required',
+            'status.required'=>'Status field is required',
+            'data_name.required'=>'Data Name field is required',
+            'data_price.required'=>'Data Price field is required',
+            'data_symbol.required'=>'Data Symbol field is required',
+            'data_shortCode.required'=>'Data Shortcode field is required',
         ];
     }
 }

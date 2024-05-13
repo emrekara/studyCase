@@ -24,6 +24,10 @@
                                         <th>Api</th>
                                         <th>Url</th>
                                         <th>Variable Path</th>
+                                        <th>Name Field</th>
+                                        <th>Price Field</th>
+                                        <th>Symbol Field</th>
+                                        <th>Short Code Field</th>
                                         <th>Status</th>
                                         <th>Transactions</th>
                                     </tr>
@@ -39,8 +43,12 @@
                                                 </td>
                                                 <td>{{$item->name}}</td>
                                                 <td>{{$item->url}}</td>
-                                                <td>{{$item->path}}</td>
+                                                <td>{{$item->var_path}}</td>
                                                 <td>{{$item->type}}</td>
+                                                <td>{{$item->data_name}}</td>
+                                                <td>{{$item->data_price}}</td>
+                                                <td>{{$item->data_symbol}}</td>
+                                                <td>{{$item->data_shortCode}}</td>
                                                 <td>
                                                     @if($item->status==1)
                                                         <span class="badge badge-success">Active</span>

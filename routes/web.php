@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',[\App\Http\Controllers\FrontController::class,'index'])->name('front.index');
+
 Route::name('admin.')->prefix('admin')->group(function (){
     Route::get('/', [\App\Http\Controllers\DashboardController::class,'index'])->name('dashboard.index');
     Route::get('/login',[\App\Http\Controllers\LoginController::class,'showLoginForm'])->name('login');

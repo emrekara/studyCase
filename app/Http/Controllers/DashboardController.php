@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Currencies;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\View;
@@ -17,7 +18,8 @@ class DashboardController extends Controller
     //
     public function index(Request $request){
         if(Auth::guard('admin')->check()){
-            return view('admin.dashboard.index');
+            $cur_rows=Currencies::all();
+            return view('admin.dashboard.index',compact('cur_rows'));
         }else{
             return redirect()->route('admin.login');
         }

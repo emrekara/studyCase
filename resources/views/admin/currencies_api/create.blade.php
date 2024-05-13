@@ -33,6 +33,30 @@
                                 {{ Form::text('var_path',old('var_path')?:null,array('class'=>'form-control col-md-4 col-sm-12')) }}
                             </div>
                         </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-md-2 col-form-label">Name Field <span class="requireStar">(*)</span></label>
+                        <div class="col-md-10">
+                            {{ Form::text('data_name',old('data_name')?:null,array('class'=>'form-control col-md-4 col-sm-12','required')) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-md-2 col-form-label">Price Field <span class="requireStar">(*)</span></label>
+                        <div class="col-md-10">
+                            {{ Form::text('data_price',old('data_price')?:null,array('class'=>'form-control col-md-4 col-sm-12','required')) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-md-2 col-form-label">Symbol Field <span class="requireStar">(*)</span></label>
+                        <div class="col-md-10">
+                            {{ Form::text('data_symbol',old('data_symbol')?:null,array('class'=>'form-control col-md-4 col-sm-12','required')) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-md-2 col-form-label">Short Code Field <span class="requireStar">(*)</span></label>
+                        <div class="col-md-10">
+                            {{ Form::text('data_shortCode',old('data_shortCode')?:null,array('class'=>'form-control col-md-4 col-sm-12','required')) }}
+                        </div>
+                    </div>
                         <div class="form-group row">
                             <label for="example-text-input" class="col-md-2 col-form-label">Status <span class="requireStar">(*)</span></label>
                             <div class="col-md-10 col-12">

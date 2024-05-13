@@ -13,4 +13,5 @@ class CurrenciesLogs extends Model
     protected $guarded=[];
     protected $hidden=[];
     protected $fillable=[];
+
 }

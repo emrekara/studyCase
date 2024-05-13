@@ -17,10 +17,9 @@ return new class extends Migration
             $table->increments('id');
             $table->integer('api_id')->unsigned()->index()->comment('Api Id');
             $table->string('name')->comment('Kur Adı');
-            $table->string('code',5)->comment('Kur Kodu');
+            $table->string('code',5)->unique()->comment('Kur Kodu');
             $table->string('symbol',5)->comment('Kur Sembol');
             $table->decimal('amount',16)->index()->comment('Kur Tutar');
-            $table->integer('status')->default(1)->index()->comment('Durum');
             $table->timestamps();
         });
     }

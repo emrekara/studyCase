@@ -34,6 +34,30 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label for="example-text-input" class="col-md-2 col-form-label">Name Field <span class="requireStar">(*)</span></label>
+                        <div class="col-md-10">
+                            {{ Form::text('data_name',$row['data_name'],array('class'=>'form-control col-md-4 col-sm-12','required')) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-md-2 col-form-label">Price Field <span class="requireStar">(*)</span></label>
+                        <div class="col-md-10">
+                            {{ Form::text('data_price',$row['data_price'],array('class'=>'form-control col-md-4 col-sm-12','required')) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-md-2 col-form-label">Symbol Field <span class="requireStar">(*)</span></label>
+                        <div class="col-md-10">
+                            {{ Form::text('data_symbol',$row['data_symbol'],array('class'=>'form-control col-md-4 col-sm-12','required')) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-md-2 col-form-label">Short Code Field <span class="requireStar">(*)</span></label>
+                        <div class="col-md-10">
+                            {{ Form::text('data_shortCode',$row['data_shortCode'],array('class'=>'form-control col-md-4 col-sm-12','required')) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label for="example-text-input" class="col-md-2 col-form-label">Status <span class="requireStar">(*)</span></label>
                         <div class="col-md-10 col-12">
                             <label class="" for="radio1">

@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('code',5)->index()->comment('Kur Kodu');
             $table->string('symbol',5)->comment('Kur Sembol');
             $table->decimal('amount',16)->index()->comment('Kur Tutar');
-            $table->integer('status')->default(1)->index()->comment('Durum');
             $table->timestamps();
         });
     }
