@@ -1,0 +1,29 @@
+img{
+    max-width: 100%;
+}
+.metismenu {
+    margin-bottom: 10em;
+}
+
+.requireStar {
+    color: #ff0000;
+    font-size: .7em;
+    display: inline-block;
+    margin-left: .4em;
+}
+
+.return_link {
+    float: right;
+    position: absolute;
+    right: 1em;
+    z-index: 15;
+}
+.thumbText{
+    font-size: .8em;
+}
+
+.listContent .editButton{
+    padding: .15em .3em;
+    font-size: .8em;
+    margin-bottom: 0.3em;
+}
